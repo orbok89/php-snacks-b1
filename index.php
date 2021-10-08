@@ -28,10 +28,21 @@
             "punteggio1"=> 40,
             "punteggio2"=> 100
         ]
-        ];
+    ];
+
         for ($i=0; $i< count($partite); $i++){
             echo "<div>".$partite[$i][squadra1]." - " .  $partite[$i][squadra2] . " | " .$partite[$i][punteggio1]."-".$partite[$i][punteggio1]."</div>" ;  
         }
+        $nome = $_GET["name"];
+        $mail = $_GET["mail"];
+        $age = $_GET["age"];
+       
+          if ( strlen($nome) >= 3 && strpos( $mail,"." ) !== false && strpos( $mail,"@" ) !== false && is_numeric($age)) {
+              echo "accesso riuscito";
+          } 
+          else {
+              echo "accesso negato";
+          }
     
 
 
