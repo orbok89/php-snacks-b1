@@ -52,11 +52,27 @@ foreach ( $posts as $key => $data){
     echo $key. "<br/>";
     foreach($data as $post){
         
-        foreach($post as $contenuto){
-            echo $contenuto. "<br/>";
-        }
+         
+            echo $post['title']. "<br/>";
+        
+    };
+
+
+
+};
+
+$vettore=[];
+$i=0;
+while ($i<15 ){
+    $numero=rand(0,20);
+    if(!in_array($numero,$vettore)){
+        array_push($vettore, $numero);
+        $i++;
     }
-}
+    
+    
+};
+var_dump($vettore);
 ?>
 </body>
 </html>
