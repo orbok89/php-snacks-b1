@@ -31,7 +31,7 @@
     ];
 
         for ($i=0; $i< count($partite); $i++){
-            echo "<div>".$partite[$i][squadra1]." - " .  $partite[$i][squadra2] . " | " .$partite[$i][punteggio1]."-".$partite[$i][punteggio1]."</div>" ;  
+            echo "<div>".$partite[$i]['squadra1']." - " .  $partite[$i]['squadra2'] . " | " .$partite[$i]['punteggio1']."-".$partite[$i]['punteggio2']."</div>" ;  
         }
         $nome = $_GET["name"];
         $mail = $_GET["mail"];
