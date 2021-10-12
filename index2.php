@@ -73,6 +73,22 @@ while ($i<15 ){
     
 };
 var_dump($vettore);
+
+
+$paragrafo= 'All inizio di un luglio straordinariamente caldo, 
+verso sera, un giovane scese per strada dallo stanzino che aveva preso in affitto in vicolo S., 
+e lentamente, come indeciso, si diresse verso il ponte K. Sulle scale riuscì a evitare l incontro con la padrona di casa.
+ Il suo stanzino era situato proprio sotto il tetto di un alta casa a cinque piani, e ricordava più un armadio che un
+  alloggio vero e proprio. La padrona dell appartamento, invece, dalla quale egli aveva preso in affitto quello stambugio,
+   vitto e servizi compresi, viveva al piano inferiore, in un appartamento separato, e ogni volta che egli scendeva 
+   in strada gli toccava immancabilmente di passare accanto alla cucina della padrona, che quasi sempre teneva la porta
+    spalancata sulle scale. E ogni volta, passandole accanto, il giovane provava una sensazione dolorosa e vile, della 
+    quale si vergognava e che lo portava a storcere il viso in una smorfia. Doveva dei soldi alla padrona, e temeva
+     d incontrarla.';
+    $divisore = explode('.', $paragrafo);
+    foreach ($divisore as $paragrafo){
+        echo '<p>'. $paragrafo.'</p>';
+    }
 ?>
 </body>
 </html>
